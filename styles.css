@@ -1,0 +1,562 @@
+/* Light mode */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/premium-vector/cat-cup-coffee-seamless-pattern-adorable-kitten-coffee-cup-cute-cat-heart-coffee_511024-503.jpg?w=740');
+    background-repeat: repeat;
+    color: #444; 
+    background-color: #ffffff; 
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+
+/* Light mode header styles */
+.main-header {
+    animation: fadeInUp 5s ease-out;
+}
+
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 5;
+    }
+}
+
+
+
+/* Light mode header styles */
+header {
+    background-color: #333;
+    opacity: 0.95;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+/* Light mode navigation menu styles */
+nav-menu {
+    background-color: #444;
+    opacity: 0.95;
+    padding: 0.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Light mode navigation styles */
+nav {
+    background-color: #444;
+    opacity: 0.95;
+    padding: 0.5rem;
+}
+
+/* Light mode navigation list styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Light mode navigation list item styles */
+nav ul li {
+    margin: 0 10px;
+}
+
+/* Light mode navigation link styles */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Light mode navigation link hover styles */
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+/* Light mode main content styles */
+main {
+    padding: 2rem;
+    text-align: center;
+    color: #444;
+    max-width: 1250px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+
+/* Light mode grid item hover styles */
+.grid-item:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    background-color: #333;
+    color: white;
+    text-shadow: 2px 2px #444;
+}
+
+/* Light mode contact info styles */
+.contact-info {
+    margin-top: 2rem;
+}
+
+/* Light mode footer styles */
+footer {
+    background-color: #333;
+    opacity: 0.95;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Light mode form styles */
+form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Light mode label styles */
+label {
+    margin-bottom: 0.5rem;
+}
+
+/* Light mode input and textarea styles */
+input,
+textarea {
+    padding: 5px;
+    margin-bottom: 1rem;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Light mode button styles */
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 4px;
+}
+
+/* Light mode button hover styles */
+button:hover {
+    background-color: #444;
+}
+
+/* Light mode grid container styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    gap: 2rem;
+}
+
+/* Light mode grid item styles */
+.grid-item {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    opacity: 0.9;
+    border-radius: 8px;
+}
+
+/* Light mode heading styles */
+h2 {
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Light mode paragraph styles */
+p {
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Light mode center class (no change needed) */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Light mode contact info styles */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Light mode slider styles */
+.slider {
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Light mode image container styles */
+.image-container {
+    width: 1500px;
+    height: 400px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+/* Light mode slide styles */
+.slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+/* Light mode button styles */
+#slide-1:target ~ .image-container {
+    left: 0px;
+}
+
+#slide-2:target ~ .image-container {
+    left: -500px;
+}
+
+#slide-3:target ~ .image-container {
+    left: -1000px;
+}
+
+/* Light mode buttons styles */
+.buttons {
+    position: relative;
+    top: -20px;
+}
+
+.buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #333;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #111; 
+    color: #fff; 
+    opacity: 0.8; 
+}
+
+/* Dark mode header styles */
+.dark-mode .main-header {
+    animation: fadeInUp 5s ease-out;
+}
+
+/* Dark mode header styles */
+.dark-mode header {
+    background-color: #000; 
+    opacity: 0.95; 
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Dark mode Footer */
+.dark-mode footer {
+    background-color: #000;
+    opacity: 0.95; 
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Dark mode navigation menu styles */
+.dark-mode nav-menu {
+    background-color: #111; 
+    opacity: 0.95; 
+    padding: 0.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Dark mode navigation styles */
+.dark-mode nav {
+    background-color: #111; 
+    opacity: 0.85; 
+    padding: 0.5rem;
+}
+
+/* Dark mode navigation list styles */
+.dark-mode nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Dark mode navigation list item styles */
+.dark-mode nav ul li {
+    margin: 0 10px;
+}
+
+/* Dark mode navigation link styles */
+.dark-mode nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Dark mode navigation link hover styles */
+.dark-mode nav ul li a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+/* Dark mode main content styles */
+.dark-mode main {
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    max-width: 1250px;
+    margin: 0 auto;
+    background-color: #111;
+    opacity: 0.8; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+
+/* Dark mode grid item hover styles */
+.dark-mode .grid-item:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    background-color: #333;
+    color: white;
+    text-shadow: 2px 2px #444;
+}
+
+/* Dark mode contact info styles */
+.dark-mode .contact-info {
+    margin-top: 2rem;
+}
+
+/* Dark mode form styles */
+.dark-mode form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dark mode label styles */
+.dark-mode label {
+    margin-bottom: 0.5rem;
+}
+
+/* Dark mode input and textarea styles */
+.dark-mode input,
+.dark-mode textarea {
+    padding: 5px;
+    margin-bottom: 1rem;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+    opacity: 0.85; 
+}
+
+/* Dark mode button styles */
+.dark-mode button {
+    background-color: #222; 
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 4px;
+    opacity: 0.85; 
+}
+
+/* Dark mode button hover styles */
+.dark-mode button:hover {
+    background-color: #333;
+}
+
+/* Dark mode grid container styles */
+.dark-mode .grid-container {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    gap: 2rem;
+}
+
+/* Dark mode grid item styles */
+.dark-mode .grid-item {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #111; 
+    opacity: 0.85;
+    border-radius: 8px;
+}
+
+/* Dark mode heading styles */
+.dark-mode h2 {
+    color: #aaa;
+    margin-bottom: 0.5rem;
+}
+
+/* Dark mode paragraph styles */
+.dark-mode p {
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+/* Dark mode center class (no change needed) */
+.dark-mode .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Dark mode contact info styles */
+.dark-mode .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dark mode slider styles */
+.dark-mode .slider {
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Dark mode image container styles */
+.dark-mode .image-container {
+    width: 1500px;
+    height: 400px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+/* Dark mode slide styles */
+.dark-mode .slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+/* Dark mode button styles */
+.dark-mode #slide-1:target ~ .image-container {
+    left: 0px;
+}
+
+.dark-mode #slide-2:target ~ .image-container {
+    left: -500px;
+}
+
+.dark-mode #slide-3:target ~ .image-container {
+    left: -1000px;
+}
+
+/* Dark mode buttons styles */
+.dark-mode .buttons {
+    position: relative;
+    top: -20px;
+}
+
+.dark-mode .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #333;
+}
+
+body.dark-mode {
+    /* Dark mode background image */
+    background-image: url('https://drive.google.com/uc?export=view&id=11eUnj5hd_ZV-B-AFDr2o0NAURDkJraUq');
+  
+  /*contact form css */
+  
+ .error {
+  border: 1px solid #ff0000;
+}
+
+.error-message {
+  color: #ff0000;
+  display: none;
+}
+
+.success-form {
+    background-color: #00ff00;
+    color: #fff; 
+}
+
+/* Trivia */
+  
+.quiz-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.question {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.option:hover {
+    background-color: #ccc;
+}
+
+.feedback {
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  
