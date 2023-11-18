@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <title>My Website</title>
+</head>
+<body>
+    <header>
+        <h1 class="main-header">
+            <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/11/6/0/fnd_cat-latte-art.jpg.rend.hgtvcom.616.462.suffix/1415304438292.jpeg" alt="Cat in a cup" width="100" height="100" class="center header-image">
+        </h1>
+        <button id="darkModeToggle">Feeling Dark</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="product/single-products.html">Products</a></li>
+            <li><a href="media/media.html">Media</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="transparent-box grid-container">
+            <div class="grid-item">
+                <h2>About Me</h2>
+                <p>
+                    Hi there! I'm passionate about web development and design. I love creating beautiful and functional websites that provide a great user experience. My name is Teresa Rodriguez. I was born in <a target="_blank" href="https://www.lindsay.ca.us/home" style="color: #333">Lindsay, California</a>, and I am 32 years old. I have a one-year-old daughter, Noemi. I have worked for Amazon for 6 years as a Process Assistant and believe now I need to change my occupation and do something I enjoy. <a target="_blank" href="https://www.linkedin.com/in/teresa-terry-rodriguez/" style="color:  #333">Click here for my LinkedIn</a>
+                </p>
+            </div>
+            <!--  quiz container -->
+            <div class="grid-item quiz-container">
+                <h2>Fun little quiz</h2>
+                <div class="question">What is my favorite animal?</div>
+<div class="option" data-answer="false">Dog</div>
+<div class="option" data-answer="false">Duck</div>
+<div class="option" data-answer="true">Cat</div>
+<div class="option" data-answer="false">Fish</div>
+                <div class="feedback"></div>
+            </div>
+            <!-- End of the quiz container -->
+            <div class="grid-item">
+                <h2>My Blog</h2>
+                <p>I have learned so much in this program. I became interested in taking this course because of my old MySpace days. I loved making profile layouts and reorganizing the top 8 friends that always caused so much drama in the past.</p>
+                <h2>8-5-2023</h2>
+                <p>In this page, you will see my beautiful navigation bar that highlights when you hover over it. It was something that I really wanted to achieve, and I believe I have. You will also see the transparency backgrounds that were added to make the website more legible.</p>
+                <p>It was difficult adding more character to this page, ensuring that I didn't miss anything. I feel like I can do more, but I need to learn the new skills that are yet to come. I've come a long way from project 1 to project 2. I am very happy with my achievements and looking forward to the next lessons.</p>
+            </div>
+            <div class="grid-item">
+                <h2>Vlog</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GlX4QTUu_jk?si=4_Kw_-BHqnbpM6ta" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="grid-item">
+                <h2>Calculator</h2>
+                <div class="display">
+                    <input type="text" id="display" readonly>
+                    <br>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('+')">+</button>
+                    <br>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('-')">-</button>
+                    <br>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('*')">*</button>
+                    <br>
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="calculate()">="</button>
+                    <button onclick="appendToDisplay('/')">/</button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h2> My Daughter </h2>
+            <div class="slider">
+                <span id="slide-1"></span>
+                <span id="slide-2"></span>
+                <span id="slide-3"></span>
+                <div class="image-container">
+                    <img src="https://drive.google.com/uc?id=14cQePeqj8NuTEXwsfj5cfpTtdY7l2JSp" class="slide" width="500" height="400" />
+                    <img src="https://drive.google.com/uc?id=1_4KsjXcLfyZz2rnq1zjuq1BgYMYAsWOT" class="slide" width="500" height="400" />
+                    <img src="https://drive.google.com/uc?id=1TM7ed4AcguA7iyICaYJ3c8m09D1LVjHM" class="slide" width="500" height="400" />
+                </div>
+                <div class="buttons">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <h2 class="mt-4 mb-4">My Projects</h2>
+            <div class="row">
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://drive.google.com/uc?id=175CzWJAz5M3lUXKK5T_sZMF7oZRNq3Ez" class="card-img-top">
+                        <div class="card-body d-grid gap-2">
+                            <h5 class="mt-4 mb-4 card-title">Project 2</h5>
+                            <p class="card-text">Created an HTML landing page and utilized advanced HTML elements</p>
+                            <a href="https://codepen.io/liddoterry/pen/qBQvLGx" class="btn btn-primary mt-4 mb-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://drive.google.com/uc?id=1LwfTr8XSgi1QZnW5Kqg3DT-GHi4mT7k6" class="card-img-top">
+                        <div class="card-body d-grid gap-2">
+                            <h5 class="mt-4 mb-4 card-title">Project 3</h5>
+                            <p class="card-text">Implementing Grid layout (Elements, Columns, rows, gaps, lines), grid container, and Align content.</p>
+                            <a href="https://codepen.io/liddoterry/pen/ExOBzGX" class="btn btn-primary mt-4 mb-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://drive.google.com/uc?id=1EqlPffJq3d5dlKsbsMGOjASfT9_7FZKd" class="card-img-top">
+                        <div class="card-body d-grid gap-2">
+                            <h5 class="mt-4 mb-4 card-title">Project 4</h5>
+                            <p class="card-text">Implemented bootstrap as a CSS framework, also Animation</p>
+                            <a href="https://codepen.io/liddoterry/pen/KKbddXr" class="btn btn-primary mt-4 mb-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <form id="contact-form">
+            <div class="form-group">
+               <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, please fill out the form below:</p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <div class="error-message" id="name-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <div class="error-message" id="email-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <div class="error-message" id="message-error"></div>
+            </div>
+            <button type="submit" id="submit-button" disabled>Submit</button>
+        </form>
+        <div class="success-message" id="success-message"></div>
+    </main>
+    <footer>
+       <p>Thanks for visiting! &#128008;</p>
+    </footer>
+</body>
+</html>
